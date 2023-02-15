@@ -24,6 +24,12 @@ class _Order2ndScreenState extends State<Order2ndScreen> {
               children: [
                 Stack(
                   children: [
+                    Center(
+                      child: Container(
+                        height: 450,
+                        child: Image.asset('assets/images/food.png'),
+                      ),
+                    ),
                     Container(
                       margin: EdgeInsets.only(top: 0),
                       child: Row(
@@ -32,7 +38,7 @@ class _Order2ndScreenState extends State<Order2ndScreen> {
                             margin: EdgeInsets.only(left: 20),
                             child: InkWell(
                               onTap: () {
-                                Navigator.of(context).pop();
+                                return Navigator.of(context).pop();
                               },
                               child: Icon(
                                 Icons.arrow_back_ios_new_outlined,
@@ -65,13 +71,7 @@ class _Order2ndScreenState extends State<Order2ndScreen> {
                           ),
                         ],
                       ),
-                    ),
-                    Center(
-                      child: Container(
-                        height: 450,
-                        child: Image.asset('assets/images/food.png'),
-                      ),
-                    ), //Image
+                    ),//Image
                   ],
                 ),
                //appbar
@@ -230,93 +230,75 @@ class _Order2ndScreenState extends State<Order2ndScreen> {
                                     scrollDirection: Axis.horizontal,
 
                                     children: [
-                                      InkWell(
-                                        onTap: (){},
-                                        child: Container(
-                                          height: 80,
-                                          width: 80,
-                                          decoration: BoxDecoration(color: Colors.red[100],
-                                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                                          ),
-                                          child: Padding(
-                                            padding: EdgeInsets.all(10),
-                                            child: Image.asset('assets/images/onion.png'),
-                                          ),
+                                      Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(color: Colors.red[100],
+                                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        ),
+                                        child: Padding(
+                                          padding: EdgeInsets.all(10),
+                                          child: Image.asset('assets/images/onion.png'),
                                         ),
                                       ),
                                       SizedBox(width: 10,),
-                                      InkWell(
-                                        onTap: (){},
-                                        child: Container(
-                                          height: 80,
-                                          width: 80,
-                                          decoration: BoxDecoration(color: Colors.lightGreen[100],
-                                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(10),
-                                            child: Image.asset('assets/images/cabbage.png'),
-                                          ),
+                                      Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(color: Colors.lightGreen[100],
+                                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(10),
+                                          child: Image.asset('assets/images/cabbage.png'),
                                         ),
                                       ),
                                       SizedBox(width: 10,),
-                                      InkWell(
-                                        onTap: (){},
-                                        child: Container(
-                                          height: 80,
-                                          width: 80,
-                                          decoration: BoxDecoration(color: Colors.yellow[100],
-                                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(10),
-                                            child: Image.asset('assets/images/corn.png'),
-                                          ),
+                                      Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(color: Colors.yellow[100],
+                                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(10),
+                                          child: Image.asset('assets/images/corn.png'),
                                         ),
                                       ),
                                       SizedBox(width: 10,),
-                                      InkWell(
-                                        onTap: (){},
-                                        child: Container(
-                                          height: 80,
-                                          width: 80,
-                                          decoration: BoxDecoration(color: Colors.redAccent[100],
-                                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(10),
-                                            child: Image.asset('assets/images/redpepper.png'),
-                                          ),
+                                      Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(color: Colors.redAccent[100],
+                                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(10),
+                                          child: Image.asset('assets/images/redpepper.png'),
                                         ),
                                       ),
                                       SizedBox(width: 10,),
-                                      InkWell(
-                                        onTap: (){},
-                                        child: Container(
-                                          height: 80,
-                                          width: 80,
-                                          decoration: BoxDecoration(color: Colors.orange[100],
-                                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(10),
-                                            child: Image.asset('assets/images/carrot.png'),
-                                          ),
+                                      Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(color: Colors.orange[100],
+                                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(10),
+                                          child: Image.asset('assets/images/carrot.png'),
                                         ),
                                       ),
                                       SizedBox(width:10,),
-                                      InkWell(
-                                        onTap: (){},
-                                        child: Container(
-                                          height: 80,
-                                          width: 80,
-                                          decoration: BoxDecoration(color: Colors.lightGreenAccent[100],
-                                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Image.asset('assets/images/broccoli.png'),
-                                          ),
+                                      Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(color: Colors.lightGreenAccent[100],
+                                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Image.asset('assets/images/broccoli.png'),
                                         ),
                                       )
                                     ],

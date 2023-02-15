@@ -65,9 +65,14 @@ class _Page3State extends State<Page3> {
                                         color: Colors.white,
                                         borderRadius:
                                             BorderRadius.circular(10)),
-                                    child: Icon(
-                                      Icons.arrow_back_ios,
-                                      size: 20,
+                                    child: InkWell(
+                                      onTap: () {
+                                        return Navigator.of(context).pop();
+                                      },
+                                      child: Icon(
+                                        Icons.arrow_back_ios,
+                                        size: 20,
+                                      ),
                                     ),
                                   )),
                                   Expanded(
